@@ -33,4 +33,12 @@ mise exec -- python scripts/inspect_animation.py "<input.hkx>" --skeleton "<skel
 - PyNifly decompresses animation transforms; it does not parse behavior graphs.
 - Animation annotations and `hkbClipTriggerArray` entries are independent event sources.
 
+## Behavior report
+
+```bash
+mise exec -- python scripts/inspect_behavior.py "<input.hkx>" --match "<regex>" -o "<report.json>"
+```
+
+`--context-depth` follows incoming object references.
+
 See [references/fields.md](references/fields.md) for the relevant Havok fields.

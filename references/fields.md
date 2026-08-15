@@ -13,4 +13,5 @@ An empty `transformTrackToBoneIndices` contains no explicit mapping; resolve tra
 
 - `hkbClipGenerator`: animation name and playback parameters.
 - `hkbClipTriggerArray`: behavior-owned timed events.
-- `hkbBehaviorGraphStringData`: event ID-to-name data.
+- `hkbBehaviorGraphStringData`: event names indexed by event ID.
+- Behavior objects form a shared reference graph; an object can have multiple incoming references.
