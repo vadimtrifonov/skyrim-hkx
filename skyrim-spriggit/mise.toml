@@ -1,0 +1,2 @@
+[tools]
+"http:spriggit-cli" = { version = "0.41.0", url = "https://github.com/Mutagen-Modding/Spriggit/releases/download/0.41.0/SpriggitCLI.zip", checksum = "sha256:9b1088eed09f3b6b9d30a40b3b0545cea4c84c3f821b512590a60819f6916529" }
