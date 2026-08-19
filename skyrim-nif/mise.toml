@@ -1,0 +1,15 @@
+[tools]
+python = "3.12.14"
+"github:BadDogSkyrim/PyNifly" = "V28.1.0"
+
+[tools."http:fo76utils"]
+version = "20250312"
+url = "https://github.com/fo76utils/fo76utils/releases/download/fo76utils-20250312/fo76utils-20250312-noavx.7z"
+checksum = "sha256:969657c42f365bc62b4d27cfb65f4c914237dbb3fcfec1b26869e99224bbc1e5"
+bin_path = "."
+
+[env]
+_.python.venv = { path = ".venv", create = true }
+PYNIFLY_ROOT = { value = "{{ tools['github:BadDogSkyrim/PyNifly'].path }}", tools = true }
+FO76UTILS_ROOT = { value = "{{ tools['http:fo76utils'].path }}", tools = true }
+FO76UTILS_VERSION = "20250312"
